@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGK</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+  </head>
+  <body class="full-column">
+    <header class="header">
+      <nav class="main-nav navbar navbar-expand-lg navbar-light" id="sticky-nav">
+        <a href="index.html" class="main-nav__logo">
+          <img src="img/ngk-logo.png" alt="" class="main-nav__logo-image" />
+        </a>
+
+        <!--   <ul class="main-menu">
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">The Company</a>
+          </li>
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">Products</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">Partners</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">News & Events</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link">Inquire Now</a>
+          </li>
+
+          <li class="main-menu__list">
+            <a href="#" class="main-menu__link main-btn btn-regular bgprimary"
+              >Part Finder</a
+            >
+          </li>
+        </ul>
+-->
+
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+
+        <div
+          class="main-menu collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item main-menu__list">
+              <a href="about-us.html" class="main-menu__link nav-link"
+                >The Company</a
+              >
+            </li>
+            <li class="nav-item main-menu__list dropdown">
+              <a
+                href="#"
+                class="main-menu__link nav-link  dropdown-toggle"
+                id="navbarDropdown1"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Products</a
+              >
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item nav-link main-menu__link " href="products.html"
+                  >Spark Plugs
+                </a>
+                <div class="dropdown-divider"></div>
+                <a
+                  class="dropdown-item nav-link main-menu__link "
+                  href="products.html"
+                  >Other Products</a>
+              </div>
+            </li>
+
+            <li class="nav-item main-menu__list">
+              <a href="partners.html" class="main-menu__link nav-link"
+                >Partners</a
+              >
+            </li>
+
+            <li class="nav-item main-menu__list">
+              <a href="news-events.html" class="main-menu__link nav-link"
+                >News & Events</a
+              >
+            </li>
+
+            <li class="nav-item main-menu__list">
+              <a href="contact.html" class="main-menu__link nav-link"
+                >Inquire Now</a
+              >
+            </li>
+
+            <li class="nav-item main-menu__list">
+              <a
+                href="parts-finder.html"
+                class="nav-link main-menu__link main-btn btn-regular bgprimary"
+                >Part Finder</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- end nav -->
+
+      <!-- start hero -->
+      <div class="hero hero--parts-finder full-column">
+        <div class="hero-content hero-content--container">
+          <h1 class="header-main-heading hero-content--header">
+            PARTS FINDER
+          </h1>
+          <p class="header-main-description">
+            Welcome to our part finder! Below, select your vehicle manufacturer
+            and model and enter all necessary information to find compatible NGK
+            and NTK parts – ranging from spark plugs, glow plugs, ignitions
+            coils and leads, to our complete sensor range.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="full-column">
+      <div class="parts-finder mt-100">
+        <div class="parts-finder__container">
+          <form>
+            <div class="parts-finder__forms">
+              <div class="parts-finder__card-form-box">
+                <h2 class="parts-finder__card-form-box-title">Part Search</h2>
+                <p class="parts-finder__card-form-box-excerpt">
+                  To filter all parts that are suitable for your vehicle, simply
+                  enter it’s specifications
+                </p>
+              </div>
+              <div class="parts-finder__card-form">
+                <div class="parts-finder__card-form-input-content">
+                  <label class="parts-finder__card-form-input-content-label"
+                    >Type</label
+                  >
+                  <select
+                    type="text"
+                    name="type"
+                    class="parts-finder__form-control"
+                  >
+                    <option selected disabled>Select Vehicle Type</option>
+                  </select>
+                </div>
+                <div class="parts-finder__card-form-input-content">
+                  <label class="parts-finder__card-form-input-content-label"
+                    >Model</label
+                  >
+                  <select
+                    type="text"
+                    name="type"
+                    class="parts-finder__form-control"
+                  >
+                    <option selected disabled>Select a Model</option>
+                  </select>
+                </div>
+              </div>
+              <div class="parts-finder__card-form">
+                <div class="parts-finder__card-form-input-content">
+                  <label class="parts-finder__card-form-input-content-label"
+                    >Make</label
+                  >
+                  <select
+                    type="text"
+                    name="type"
+                    class="parts-finder__form-control"
+                  >
+                    <option selected disabled>Select Make</option>
+                  </select>
+                </div>
+                <div class="parts-finder__card-form-input-content">
+                  <label class="parts-finder__card-form-input-content-label"
+                    >Engine</label
+                  >
+                  <select
+                    type="text"
+                    name="type"
+                    class="parts-finder__form-control"
+                  >
+                    <option selected disabled>Select Engine</option>
+                  </select>
+                </div>
+              </div>
+              <div class="parts-finder__card-form">
+                <div class="parts-finder__card-form-input-content">
+                  <label class="parts-finder__card-form-input-content-label"
+                    >Year</label
+                  >
+                  <select
+                    type="text"
+                    name="type"
+                    class="parts-finder__form-control"
+                  >
+                    <option selected disabled>Select Year</option>
+                  </select>
+                </div>
+                <div class="parts-finder__card-form-input-content">
+                  <div class="parts-finder__search-btn">
+                    <a
+                      href="#"
+                      class="nav-link main-btn btn-regular bgprimary"
+                      ><span class="parts-finder__btn-txt">Search</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="parts-finder mt-100">
+        <div class="parts-finder__container">
+          <div class="parts-finder__card-result-box">
+            <div class="parts-finder__card-result-box-content">
+              <h2 class="parts-finder__card-result-box-title">
+                Current Search
+              </h2>
+              <span class="parts-finder__card-result-box-sub-title"
+                >Parts for:</span
+              >
+
+              <div class="parts-finder__card-result-box-details">
+                <div class="parts-finder__card-result-box-details-content">
+                  <h2 class="parts-finder__card-result-box-details-title">
+                    Make
+                  </h2>
+                  <p class="parts-finder__card-result-box-details-excerpt">
+                    MITSUBISHI
+                  </p>
+                </div>
+                <div class="parts-finder__card-result-box-details-content">
+                  <h2 class="parts-finder__card-result-box-details-title">
+                    Make
+                  </h2>
+                  <p class="parts-finder__card-result-box-details-excerpt">
+                    MITSUBISHI
+                  </p>
+                </div>
+                <div class="parts-finder__card-result-box-details-content">
+                  <h2 class="parts-finder__card-result-box-details-title">
+                    Make
+                  </h2>
+                  <p class="parts-finder__card-result-box-details-excerpt">
+                    MITSUBISHI
+                  </p>
+                </div>
+                <div class="parts-finder__card-result-box-details-content">
+                  <h2 class="parts-finder__card-result-box-details-title">
+                    Make
+                  </h2>
+                  <p class="parts-finder__card-result-box-details-excerpt">
+                    MITSUBISHI
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="parts-finder__card-result-table-content">
+              <h2 class="parts-finder__card-result-table-title">
+                Showing results (1 pages)
+              </h2>
+
+              <div class="parts-finder__card-result-table-details">
+                <table class="table parts-finder__card-table">
+                  <thead>
+                    <tr>
+                      <th class="parts-finder__card-table-head">Description</th>
+                      <th class="parts-finder__card-table-head">Part No.</th>
+                      <th class="parts-finder__card-table-head">Gap Set</th>
+                      <th class="parts-finder__card-table-head">Gap (mm)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="parts-finder__card-table-data">
+                        Copper Cores
+                      </td>
+                      <td class="parts-finder__card-table-data-primary">
+                        4162
+                      </td>
+                      <td class="parts-finder__card-table-data"></td>
+                      <td class="parts-finder__card-table-data">0.6</td>
+                    </tr>
+                    <tr>
+                      <td class="parts-finder__card-table-data">
+                        Copper Cores
+                      </td>
+                      <td class="parts-finder__card-table-data-primary">
+                        4162
+                      </td>
+                      <td class="parts-finder__card-table-data"></td>
+                      <td class="parts-finder__card-table-data">0.6</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parts-finder mt-100">
+        <div class="parts-finder__container">
+          <div class="parts-finder__header">
+            <h2 class="parts-finder__title">
+              Cant find the right parts for your vehicle?
+            </h2>
+            <a
+              href="contact.html"
+              class="nav-link main-menu__link main-btn btn-regular bgprimary parts-finder__button"
+              >Contact Us</a
+            >
+          </div>
+
+          <div class="parts-finder__disclaimer">
+            <h2 class="parts-finder__disclaimer-title">Disclaimer:</h2>
+            <p class="parts-finder__disclaimer-desc">
+              All applications, illustrations and technical information detailed
+              on this site have been assembled based on the latest information
+              available. While every precaution has been taken in the
+              compilation of this information, NGK Spark Plug (Australia) Pty
+              Ltd takes no responsibility for inaccuracies that may occur within
+              it.
+            </p>
+            <p class="parts-finder__disclaimer-desc">
+              Product linkage to vehicles or equipment from this publication are
+              considered under normal conditions of use, fitted by a
+              professional.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to action section -->
+      <div
+        class="cta-image cta-image--parts-finder cta-bottom-container mt-100"
+      >
+        <h2 class="cta-image__heading">
+          Leading technology and innovation
+        </h2>
+        <a href="#" class="cta-image__button main-btn btn-regular bgwhite"
+          >Browse Products</a
+        >
+      </div>
+    </main>
+
+    <footer class="footer full-column">
+      <div class="footer__cont grid-center">
+        <!-- start widget -->
+        <div class="footer__widget logo-sec">
+          <div class="footer__logo-cont">
+            <img src="img/ngk-logo-white.png" alt="NGK NTK Logo" />
+          </div>
+          <div class="icon-text mt-60">
+            <i class="fas fa-envelope"></i>
+            <span>support@ngk.ph</span>
+          </div>
+          <div class="icon-text">
+            <i class="fas fa-phone-alt"></i>
+            <span>+639 1234 567 983</span>
+          </div>
+          <div class="socialmedia">
+            <a href="#" class="socialmedia__links"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="socialmedia__links"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="socialmedia__links"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="socialmedia__links"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <!-- start widget -->
+        <div class="footer__widget links-sec">
+          <h6 class="links-sec__title">Products</h6>
+          <ul>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Other Products</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+          </ul>
+        </div>
+        <!-- start widget -->
+        <div class="footer__widget links-sec">
+          <h6 class="links-sec__title">About Us</h6>
+          <ul>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Other Products</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+          </ul>
+        </div>
+        <!-- start widget -->
+        <div class="footer__widget links-sec">
+          <h6 class="links-sec__title">Resources</h6>
+          <ul>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Other Products</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+            <li class="links-sec__list">
+              <a href="#" class="links-sec__link">Spark Plugs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright-cont">
+        <div class="footer__copyright-left">
+          <span class="copyright-text"
+            >© 2020 NGK Spark Plug (Philippines)</span
+          >
+          <span><a href="policy.html">Policy</a></span>
+          <span>|</span>
+          <span><a href="terms-and-conditions.html">Terms & Conditions</a></span>
+        </div>
+        <a href="#" class="backtotop">Back to Top</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

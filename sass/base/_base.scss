@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+
+  @media only screen and (max-width: $bp-mobile-lg) {
+    font-size: 56.25%; // 1rem = 9px;
+  }
+}
+
+body {
+  font-size: $default-font;
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  transition: $default-transition;
+}
+
+select:invalid {
+  color: gray;
+}

@@ -1,0 +1,151 @@
+// Product Header Content
+
+.product-header {
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  position: relative;
+
+  &__brand {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 3rem;
+  }
+
+  &__img-logo {
+    max-width: 12rem;
+  }
+
+  &::before {
+    content: "";
+    background: $color-primary;
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+  }
+
+  &::after {
+    content: "";
+    height: 1px;
+    background: #e2e4e8;
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+    z-index: 1;
+  }
+
+  // &::before {
+  //   content: "";
+  //   height: 2px;
+  //   width: 15rem;
+  //   background: $color-primary;
+  //   position: absolute;
+  //   margin-top: 21.1rem;
+  //   display: block;
+  //   z-index: 2;
+
+  //     @media only screen and (max-width: $bp-mobile-lg) {
+  //       margin-top: -20.3rem !important;
+  //     }
+
+  //     @media only screen and (max-width: $bp-mobile-md) {
+  //       margin-top: 31.3rem !important;
+  //     }
+
+  //     @media only screen and (max-width: $bp-mobile-sm) {
+  //       margin-top: 34.5rem !important;
+  //     }
+  // }
+
+  &__title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: $color-black;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      font-size: 24px !important;
+    }
+  }
+
+  &__desc {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem !important;
+    line-height: 28px;
+    color: $color-text-dark;
+    width: 869px;
+    padding-top: 2rem;
+
+    @media only screen and (max-width: $bp-tab-md) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-tab-pt) {
+      width: 100%;
+    }
+  }
+}
+
+// Product Container
+
+.card-product-body-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-gap: 2em;
+}
+
+.product-container {
+  grid-column: center-start / center-end;
+  padding-bottom: 5rem;
+}
+
+// #  Product Card
+.card-product {
+  padding: 3rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+  &__image {
+    width: 30rem;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-primary;
+    padding-top: 1rem;
+  }
+
+  &__excerpt {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $color-text-dark;
+    padding-top: 1.5rem;
+  }
+
+  &__btn-link {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $color-black;
+    margin-top: 4rem;
+  }
+}

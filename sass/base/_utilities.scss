@@ -1,0 +1,69 @@
+// Backgrounds
+
+.bgprimary {
+  background: $color-primary;
+  color: $color-white !important;
+}
+
+.bgwhite {
+  background: $color-white;
+  color: $color-black;
+}
+
+// Margins
+
+.mt-100 {
+  margin-top: 10rem;
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    margin-top: 5rem !important;
+  }
+}
+
+.mt-90 {
+  margin-top: 9rem;
+}
+
+.mt-80 {
+  margin-top: 8rem;
+}
+
+.mt-70 {
+  margin-top: 7rem;
+}
+
+.mt-60 {
+  margin-top: 6rem;
+}
+
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.mt-40 {
+  margin-top: 4rem;
+}
+
+.mt-30 {
+  margin-top: 3rem;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}

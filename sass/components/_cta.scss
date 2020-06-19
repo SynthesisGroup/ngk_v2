@@ -1,0 +1,63 @@
+.cta-image {
+  padding: 10.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &--home {
+    background: url("../img/cta-home-img.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &--about {
+  }
+
+  &--partner {
+    background: url("../img/cta-partner-img.png") no-repeat;
+    background-size: cover;
+  }
+
+  &--parts-finder {
+    background: url("../img/cta-parts-finder-img.png") no-repeat;
+    background-size: cover;
+  }
+
+  &__heading {
+    color: $color-white;
+    font-size: 4rem !important;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    @media only screen and (max-width: $bp-desktop-md) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      width: 85%;
+      font-size: 3rem !important;
+    }
+  }
+
+  &__desc {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: $color-white !important;
+    margin-top: -3rem;
+    margin-bottom: 6rem;
+    width: 80%;
+    display: block;
+  }
+
+  &__button {
+  }
+}

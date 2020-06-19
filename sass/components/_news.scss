@@ -1,0 +1,108 @@
+/* News Section */
+
+.news-body-content {
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-gap: 3em;
+}
+
+.news-heading {
+  display: grid;
+  grid-template-columns: min-content 50% 1fr;
+  padding-bottom: 4rem;
+  align-items: center;
+
+  @media only screen and (max-width: 40em) {
+    grid-template-columns: min-content 1fr;
+  }
+
+  @media only screen and (max-width: $bp-mobile-sm) {
+    // grid-template-columns: 100%;
+  }
+
+  img {
+    margin-right: 3rem;
+  }
+}
+
+.news-heading .news-heading-title {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 98.6%;
+  color: $color-black;
+}
+
+.news-heading .news-link-right {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-black;
+  text-align: right;
+
+  @media only screen and (max-width: 40em) {
+    grid-column: 1 / -1;
+    margin-top: 3rem;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: $bp-mobile-sm) {
+    margin-top: 2rem;
+  }
+}
+
+.card-news {
+}
+
+.card-news-image > img {
+  width: 100%;
+}
+
+.card-news .card-news-title {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 24px;
+  color: $color-black;
+  margin-top: 2rem;
+}
+
+.card-news .card-news-date {
+  font-family: $font-primary;
+  font-weight: 325;
+  font-size: 12px;
+  line-height: 24px;
+  color: $color-text-dark;
+  margin-top: 1em !important;
+}
+
+.card-news .card-news-excerpt {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  color: $color-text-dark;
+  padding-top: 1.5rem;
+}
+
+.card-news .news-btn-link {
+  margin-top: 4rem;
+  max-width: 100%;
+}
+
+.card-news .news-btn-link > a {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: $color-black;
+  margin-top: 4rem;
+}

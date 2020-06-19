@@ -1,0 +1,61 @@
+// FONT
+
+$default-font: 1.6rem;
+$font-size-base: 1.6rem;
+$reg-subtitle: 1.8rem;
+
+// COLORS
+$color-primary: #e60012;
+$color-secondary: #01813f;
+
+$primary: #e60012;
+
+$color-black: #212121;
+$color-white: #ffffff;
+
+$color-text-dark: #5a5a5a;
+$color-grey: #d3d3d3;
+$color-grey-light: #bec3c8;
+$color-grey-light2: #c4c4c4;
+$color-mid-grey: #6c7489;
+
+$link-color: #212121;
+
+// FONT VARIABLES
+$font-primary: "Montserrat", sans-serif;
+$font-family-sans-serif: "Montserrat", sans-serif;
+
+$line-height-base: 1.6;
+$font-weight-base: 300;
+
+// GRID
+$grid-center: center-start / center-end;
+
+// BORDER
+
+$default-border: 3px;
+
+// TRANSITION
+
+$default-transition: all 0.2s ease-in-out;
+
+// SHADOWS
+
+$default-box-shadow: 0px 10px 50px rgba(139, 163, 185, 0.4),
+  0px 60px 30px rgba(0, 0, 0, 0.02);
+
+// Fontawesome
+
+$fa-font-path: "../vendors/fontawesome-free-5.12.1-web/webfonts";
+
+// BREAKPOINTS
+
+$bp-desktop-lg: 79.3em; //1270px
+$bp-desktop-md: 72.5em; //1160px
+$bp-tab-lg: 64em; // 1024
+$bp-tab-md: 61.8em; // 990px
+$bp-tab-pt: 53.75em; // 860px
+$bp-tab-sm: 48em; // 768px
+$bp-mobile-lg: 40em; // 640px
+$bp-mobile-md: 35.5em; // 568px
+$bp-mobile-sm: 25.8em; // 414px

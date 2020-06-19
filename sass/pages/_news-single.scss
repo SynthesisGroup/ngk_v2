@@ -1,0 +1,102 @@
+.news-single-heading {
+  &__title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px !important;
+    line-height: 36px;
+    color: #212121;
+    max-width: 80rem;
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      font-size: 24px !important;
+    }
+  }
+
+  &__news-img {
+    margin-top: 4rem;
+    width: 57.2em;
+
+    @media only screen and (max-width: $bp-tab-lg) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      width: 100%;
+    }
+  }
+
+  &__news-details {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 6rem;
+    max-width: 57.5em;
+
+    @media only screen and (max-width: $bp-tab-lg) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__author-date {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 325;
+    font-size: 12px !important;
+    line-height: 24px;
+    color: #5a5a5a;
+    max-width: 17rem;
+    margin-bottom: 4rem;
+  }
+
+  &__news-sub-title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #212121;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__news-desc {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #212121;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-mobile-lg) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.main-btn {
+  border-radius: $default-border;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: center;
+  font-weight: 500 !important;
+
+  img,
+  svg {
+    margin-right: 2rem;
+  }
+}
+
+.btn-regular {
+  padding: 1.3rem 4rem !important;
+  font-size: 1.4rem !important;
+}
+
+.btn-large {
+  padding: 1.5rem 4rem !important;
+}
+
+.bg-grey {
+  background: #BEC3C8;
+  color: $color-white !important;
+}
+
+.main-btn.bgprimary:hover {
+  background: $color-secondary;
+}
+
+
+.main-btn.bg-grey:hover {
+  background: $color-secondary;
+}
+
+
+// Ghost Button
+
+.ghost-btn:link,
+.ghost-btn:visited {
+  padding: 1rem 3.5rem;
+  border: 1px solid;
+  border-radius: $default-border;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--black {
+    border-color: $color-black;
+  }
+
+  &:hover {
+    background: $color-primary;
+    border: 1px solid transparent;
+    color: $color-white;
+  }
+}
+
+.ghost-btn {
+  &--white {
+    color: $color-white;
+  }
+
+  &--black {
+    border-color: $color-black;
+  }
+}
+
+// Submit Form Button
+
+.submit-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  color: $color-text-dark;
+  cursor: pointer;
+  background: $color-white;
+  transition: $default-transition;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}

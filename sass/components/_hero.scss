@@ -1,0 +1,112 @@
+.hero-content {
+  &--container {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+  }
+
+  &--header {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      font-size: 4rem !important;
+    }
+  }
+
+  &--desc {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 25.2em;
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+  }
+}
+
+.hero {
+  height: 44rem;
+  padding: 4rem 0;
+  background-size: cover !important;
+  align-items: center;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-mobile-lg) {
+    height: 100%;
+    padding: 6rem 0;
+  }
+
+  // About Us Hero Banner
+
+  &--about-us {
+    background: url("../img/about-us-hero.png") no-repeat;
+  }
+
+  // Home Hero Banner
+
+  &--home {
+    background: url("../img/hero-image.jpg") no-repeat;
+    height: 100vh;
+  }
+
+  // Products Hero Banner
+
+  &--products {
+    background: url("../img/product-hero.png") no-repeat;
+  }
+
+  // Partners Hero Banner
+
+  &--partners {
+    background: url("../img/partner-hero.png") no-repeat;
+  }
+
+  // News & Events Hero Banner
+
+  &--news-events {
+    background: url("../img/news-events-hero.png") no-repeat;
+    background-position: center center;
+  }
+
+  // Contacts Hero Banner
+
+  &--contacts {
+    background: url("../img/contacts-hero.png") no-repeat;
+    background-position: center right;
+  }
+
+  // Parts Finder Hero Banner
+
+  &--parts-finder {
+    background: url("../img/parts-finder-hero.png") no-repeat;
+  }
+
+   // Careers Hero Banner
+
+  &--careers {
+    background: url("../img/careers-hero.png") no-repeat;
+  }
+}

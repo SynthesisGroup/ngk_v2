@@ -1,0 +1,369 @@
+.hero-content {
+}
+
+.faq-form-container {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  grid-gap: 4em;
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    margin-top: 50px;
+  }
+}
+
+.faq-form-overlay {
+  position: relative;
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.faq-form {
+  // Form Contact
+
+  &__message-form {
+    margin-top: 5rem;
+    background-color: $color-white;
+  }
+
+  &__input-field {
+    padding: 1.2rem;
+    font-size: 1.4rem !important;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  &__column-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.9em;
+  }
+
+  &__column-group-one {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2.5rem;
+  }
+
+  &__submit-button {
+    margin-top: 5rem;
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(2.5, 1fr);
+  }
+
+  &__input-group-subject {
+    margin-top: 2rem;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px !important;
+    line-height: 36px;
+    color: #212121;
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      font-size: 24px !important;
+    }
+  }
+
+  &__desc {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5a5a5a;
+    padding-top: 3rem !important;
+  }
+
+  // Contact Info
+
+  &__contact {
+    padding: 3rem;
+    background: $color-primary;
+    grid-column: center-start / center-end;
+  }
+
+  &__contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+    margin-left: 2rem;
+
+    @media only screen and (max-width: $bp-tab-md) {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  &__phone-title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 28px;
+    color: $color-white;
+  }
+
+  &__phone-list {
+    list-style: none;
+  }
+
+  &__email-title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 28px;
+    color: $color-white;
+  }
+
+  &__phone-list-number {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 28px;
+    color: $color-white;
+  }
+
+  &__email-list {
+    list-style: none;
+  }
+
+  &__email-list-info {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 28px;
+    color: $color-white;
+  }
+
+  &__business-days {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  &__business-days-title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    color: $color-white;
+  }
+
+  &__business-days-time {
+    margin-left: 1rem;
+  }
+
+  &__img {
+    position: relative;
+    grid-column: center-start / center-end;
+    width: 100%;
+  }
+
+  &__info {
+    padding: 3rem;
+    background-color: $color-white;
+  }
+
+  &__info-margin {
+    margin-left: 1rem;
+  }
+
+  &__info-title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px !important;
+    line-height: 34px;
+    color: #e60012;
+    border-bottom: 1px solid #e2e4e8;
+    padding: 1rem 0;
+  }
+
+  &__info-address {
+    list-style: none;
+    margin-top: 3rem;
+  }
+
+  &__info-address-list {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    color: #5a5a5a;
+  }
+
+  &__info-social {
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__info-social-list {
+    margin: 1rem;
+  }
+}
+
+.faq-header {
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  margin-bottom: 10rem;
+
+  &__title {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: $color-black;
+    margin-top: 2rem;
+  }
+
+  &__desc {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #5a5a5a;
+    margin-top: 1rem;
+    max-width: 62.2rem;
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      max-width: 60.2rem !important;
+    }
+  }
+}
+
+/*Accordion*/
+
+.faq-accordion {
+  width: 80% !important;
+  margin-top: 2rem;
+
+  @media only screen and (max-width: $bp-tab-md) {
+    width: 100% !important;
+  }
+}
+
+.first-set {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.first-set > a {
+  display: block;
+  padding: 20px 0px;
+  font-family: &font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-black;
+  border-bottom: 1px solid #ddd;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    font-size: 14px;
+  }
+}
+
+.first-set > a i {
+  float: right;
+  margin-top: 2px;
+  color: $color-black;
+}
+
+.first-set > a.active {
+  color: $color-primary;
+}
+
+.first-accordion-content {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+
+.first-accordion-content p {
+  padding: 10px 15px;
+  margin: 0;
+  color: #333;
+}
+
+.second-set {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  background-color: #ffffff;
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.second-set .faqSecondaryLink {
+  display: block;
+  padding: 20px 0px;
+  font-family: &font-primary;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px !important;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-black;
+  border-bottom: 1px solid #ddd;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    font-size: 12px !important;
+  }
+}
+
+.second-set .faqSecondaryLink .faqArrow {
+  float: right;
+  margin-top: 2px;
+  color: $color-black;
+}
+
+.second-set .faqSecondaryLink.active {
+  color: $color-primary;
+}
+
+.second-accordion-content {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: none;
+}
+
+.second-accordion-content p {
+  padding: 10px 15px;
+  margin: 0;
+  color: #333;
+}
